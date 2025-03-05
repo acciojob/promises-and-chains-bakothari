@@ -4,6 +4,9 @@ let nameInput = document.getElementById("name");
 let btn = document.getElementById("btn");
 
 function ageValidation() {
+	 if(!ageInput.value || !nameInput.value){
+        alert("Please enter valid details.")
+    }
     return new Promise((resolve, reject) => {
         let age = parseInt(ageInput.value);
 
